@@ -1,0 +1,31 @@
+@import "tailwindcss";
+:root {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    /* for titles */
+    /* for body */
+}
+td>.ant-tale-cell,th,td {
+    min-width: 120px !important;
+    height: 20px !important;
+    padding: 8px 16px !important;
+    overflow-wrap: normal !important;
+}
+
+.ant-table{
+    width: 100% !important;
+    overflow-x: auto !important;
+}
+
+.scrollable::-webkit-scrollbar {
+  width: 6px;
+}
+.scrollable::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+.scrollable::-webkit-scrollbar-thumb {
+  background: #8888887e;
+  border-radius: 6px;
+}
+.scrollable::-webkit-scrollbar-thumb:hover {
+  background: #555555a0;
+}

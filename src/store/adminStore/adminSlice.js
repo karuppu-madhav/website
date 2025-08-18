@@ -1,0 +1,37 @@
+export const createAdminSlice = (set, get) => ({
+    categories:[],
+    products:[],
+    orders:[],
+    settings:{},
+    currentProduct:null,
+    setCategories:(categories)=>{
+        set((state)=>({
+            ...state,
+            categories:categories
+        }))
+    },
+    setProducts:(products)=>{
+        set((state)=>({
+            ...state,
+            products:products
+        }))
+    },
+    setOrders:(orders)=>{
+        set((state)=>({
+            ...state,
+            orders:orders
+        }))
+    },
+    setCurrentProduct:(product)=>{
+        set((state)=>({
+            ...state,
+            currentProduct:product
+        }))
+    },
+    setSettings:(settings)=>{
+        set((state)=>({
+            ...state,
+            settings:settings
+        }))
+    }
+})
