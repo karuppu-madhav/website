@@ -3,7 +3,6 @@ import { Carousel } from "antd";
 import AboutImage from '../assets/about-madhav-crackers.png'
 import BannerOne from '../assets/bannerOne.png'
 import BannerTwo from '../assets/bannerTwo.png'
-import BottomBanner from '../assets/bottom.gif'
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import FAQSection from "../components/FAQ";
@@ -16,6 +15,41 @@ import { Helmet } from "react-helmet";
 import { FaWhatsapp } from "react-icons/fa";
 
 export default function HomePage() {
+
+    const category = [
+        {
+            title:"Sound Crackers",
+            image:'https://ik.imagekit.io/pz2oagln5/categories/category1.png?updatedAt=1756631742573'
+        },
+        {
+            title:"Flower Pots",
+            image:'https://ik.imagekit.io/pz2oagln5/categories/category2.png?updatedAt=1756631742573'
+        },
+        {
+            title:"Ground Chakkars",
+            image:'https://ik.imagekit.io/pz2oagln5/categories/category3.png?updatedAt=1756631742573'
+        },
+        {
+            title:"Twinkling Star",
+            image:'https://ik.imagekit.io/pz2oagln5/categories/category4.png?updatedAt=1756631742573'
+        },
+        {
+            title:"Bijili Crackers",
+            image:'https://ik.imagekit.io/pz2oagln5/categories/category5.png?updatedAt=1756631742573'
+        },
+        {
+            title:"Sound Bomb",
+            image:'https://ik.imagekit.io/pz2oagln5/categories/category6.png?updatedAt=1756631742573'
+        },
+        {
+            title:"Rockets",
+            image:'https://ik.imagekit.io/pz2oagln5/categories/category7.png?updatedAt=1756631742573'
+        },
+        {
+            title:"Repeating Shots",
+            image:'https://ik.imagekit.io/pz2oagln5/categories/category8.png?updatedAt=1756631742573'
+        },
+    ]
 
     const handleSubmit = () => {
         const rawMessage = `Hello, I am interested to purchase crackers `;
@@ -120,26 +154,17 @@ export default function HomePage() {
                             Explore Our Crackers Categories
                         </h2>
                         <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-                            {[
-                                "Sparklers",
-                                "Flower Pots",
-                                "Ground Chakkars",
-                                "Rockets",
-                                "Atom Bombs",
-                                "Fancy Aerial Shots",
-                                "Gift Boxes",
-                                "Kids Special"
-                            ].map((item) => (
+                            {category.map((item) => (
                                 <div
                                     key={item}
                                     className="bg-white shadow-lg rounded-xl p-6 hover:shadow-xl transition"
                                 >
-                                    <h1 className="text-6xl my-2" >💥</h1>
+                                    <img className="mb-3 rounded-md" loading='lazy' src={item?.image} alt={item?.title} />
                                     <h3 className="text-xl font-semibold text-blue-800 mb-2">
-                                        {item}
+                                        {item?.title}
                                     </h3>
                                     <p className="text-gray-600 text-sm">
-                                        Premium Sivakasi {item.toLowerCase()} at best wholesale price.
+                                        Premium Sivakasi {item?.title.toLowerCase()} at best wholesale price.
                                     </p>
                                 </div>
                             ))}
@@ -175,7 +200,7 @@ export default function HomePage() {
                         ))}
                     </div>
                 </section>
-                <img className="py-8" src={BottomBanner} alt="" />
+                <img className="py-8" loading='lazy' src='https://ik.imagekit.io/pz2oagln5/bottom.gif?updatedAt=1756632143015' alt="" />
                 <FAQSection />
             </main>
             <Footer />

@@ -113,16 +113,7 @@ export default function ContactUs() {
 
                     <div className="space-y-8">
                         <div className="aspect-w-16 aspect-h-9 rounded-xl overflow-hidden shadow">
-                            <iframe
-                                title="Madhav Crackers Location"
-                                src="https://www.google.com/maps/embed?pb=YOUR_GOOGLE_MAPS_EMBED_CODE"
-                                width="600"
-                                height="450"
-                                style={{ border: 0 }}
-                                allowFullScreen=""
-                                loading="lazy"
-                                className="w-full h-80"
-                            ></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47970.91377853612!2d77.78741397835589!3d9.414822137109654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b06cb0065cc0219%3A0x3e818a805562ff2a!2sMadhav%20Crackers!5e1!3m2!1sen!2sin!4v1756634221308!5m2!1sen!2sin" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                     </div>
                 </div>

@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import QR from '../assets/qr.jpeg'
 import { Helmet } from "react-helmet";
 
 export default function PaymentInfo() {
@@ -27,7 +28,7 @@ export default function PaymentInfo() {
                 <div className="mx-auto grid grid-cols-12 space-y-8 gap-6">
                     <div className="col-span-12 md:col-span-6 lg:col-span-8" >
                         {/* Bank Details */}
-                        <div className="bg-white shadow rounded-lg p-6">
+                        {/* <div className="bg-white shadow rounded-lg p-6">
                             <h2 className="text-2xl font-semibold text-blue-800 mb-4">
                                 Bank Account Details
                             </h2>
@@ -49,6 +50,21 @@ export default function PaymentInfo() {
                                 </li>
                                 <li>
                                     <strong>IFSC Code:</strong> KVBL0000123
+                                </li>
+                            </ul>
+                        </div> */}
+                        <div className="bg-white shadow rounded-lg p-6">
+                            <h2 className="text-2xl font-semibold text-blue-800 mb-4">
+                                UPI & Mobile Payments
+                            </h2>
+                            <ul className="space-y-2 text-gray-700">
+                                <li>
+                                    <strong>UPI ID:</strong>{" "}
+                                    <span className="font-medium">mariyappanj041-2@okhdfcbank</span>
+                                </li>
+                                <li>
+                                    <strong>Google Pay Number:</strong>{" "}
+                                    <span className="font-medium">9786504886</span>
                                 </li>
                             </ul>
                         </div>
@@ -78,21 +94,11 @@ export default function PaymentInfo() {
                         {/* Digital Payments */}
                         <div className="bg-white shadow rounded-lg p-6">
                             <h2 className="text-2xl font-semibold text-blue-800 mb-4">
-                                UPI & Mobile Payments
+                                Scan & Pay
                             </h2>
-                            <ul className="space-y-2 text-gray-700">
-                                <li>
-                                    <strong>UPI ID:</strong>{" "}
-                                    <span className="font-medium">mariyappanj041-2@okhdfcbank</span>
-                                </li>
-                                <li>
-                                    <strong>Google Pay Number:</strong>{" "}
-                                    <span className="font-medium">9786504886</span>
-                                </li>
-                            </ul>
                             {/* Optional: UPI QR code image */}
                             <div className="mt-4">
-                                <img src="/path-to-qr-code.png" alt="UPI QR code" className="w-32 h-32" />
+                                <img src={QR} alt="UPI QR code" className="w-full" />
                             </div>
                         </div>
                     </div>

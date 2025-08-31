@@ -7,7 +7,7 @@ const AdminMain = React.lazy(() => import('./pages/admin/AdminMain'));
 const QuickPurchase = React.lazy(() => import('./pages/QuickPurchase'));
 const TrackOrder = React.lazy(() => import('./pages/TrackOrder'));
 const Cart = React.lazy(() => import('./pages/Cart'));
-
+import Logo from './assets/madhav-logo.jpg'
 import DataRoute from './route/DataRoute';
 
 import App from 'antd/es/app';
@@ -55,9 +55,18 @@ const router = createBrowserRouter([
   }
 ]);
 
+const Loader = () => {
+  return (
+    <div className='w-screen h-screen fixed top-0 left-0 bg-white flex flex-col justify-center items-center' >
+      <img className='animate-bounce w-[100px]' src={Logo} alt='madhav crackers' />
+      <p>Loading...</p>
+    </div>
+  )
+}
+
 createRoot(document.getElementById('root')).render(
   <App>
-    <React.Suspense fallback={<div>Loading...</div>}>
+    <React.Suspense fallback={<Loader/>}>
       <RouterProvider router={router} />
     </React.Suspense>
   </App>
