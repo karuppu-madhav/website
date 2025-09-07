@@ -63,7 +63,7 @@ export default function HomePage() {
         <div className="relative">
             <button
                 onClick={handleSubmit}
-                className="z-12 fixed bottom-12 right-6 bg-green-600 text-white p-3 rounded-full shadow cursor-pointer hover:bg-green-700"
+                className="animate-bounce z-12 fixed bottom-12 right-6 bg-green-600 text-white p-3 rounded-full shadow cursor-pointer hover:bg-green-700"
                 aria-label="Chat on WhatsApp"
                 title="Chat on WhatsApp"
             >
@@ -85,7 +85,7 @@ export default function HomePage() {
 
                 {/* Open Graph / Facebook */}
                 <meta property="og:type" content="website" />
-                <meta property="og:url" content="https://www.madhavcrackers.com/" />
+                <meta property="og:url" content="https://www.madhavcrackers.com/home" />
                 <meta
                     property="og:title"
                     content="Madhav Crackers | Crackers Shop in Sivakasi"

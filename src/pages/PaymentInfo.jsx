@@ -27,32 +27,6 @@ export default function PaymentInfo() {
             <section className="bg-blue-50 text-gray-800 py-12 px-6">
                 <div className="mx-auto grid grid-cols-12 space-y-8 gap-6">
                     <div className="col-span-12 md:col-span-6 lg:col-span-8" >
-                        {/* Bank Details */}
-                        {/* <div className="bg-white shadow rounded-lg p-6">
-                            <h2 className="text-2xl font-semibold text-blue-800 mb-4">
-                                Bank Account Details
-                            </h2>
-                            <ul className="space-y-2 text-gray-700">
-                                <li>
-                                    <strong>Account Holder Name:</strong> Madhav Crackers
-                                </li>
-                                <li>
-                                    <strong>Account Number:</strong> 1234567890123456
-                                </li>
-                                <li>
-                                    <strong>Account Type:</strong> Current
-                                </li>
-                                <li>
-                                    <strong>Bank:</strong> Karur Vysya Bank
-                                </li>
-                                <li>
-                                    <strong>Branch:</strong> Sivakasi
-                                </li>
-                                <li>
-                                    <strong>IFSC Code:</strong> KVBL0000123
-                                </li>
-                            </ul>
-                        </div> */}
                         <div className="bg-white shadow rounded-lg p-6">
                             <h2 className="text-2xl font-semibold text-blue-800 mb-4">
                                 UPI & Mobile Payments
@@ -68,6 +42,29 @@ export default function PaymentInfo() {
                                 </li>
                             </ul>
                         </div>
+                        {/* Bank Details */}
+                        {/* <div className="bg-white shadow rounded-lg p-6 mt-4">
+                            <h2 className="text-2xl font-semibold text-blue-800 mb-4">
+                                Bank Account Details
+                            </h2>
+                            <ul className="space-y-2 text-gray-700">
+                                <li>
+                                    <strong>Account Holder Name:</strong> Mariappan V
+                                </li>
+                                <li>
+                                    <strong>Account Number:</strong> 003100660000344
+                                </li>
+                                <li>
+                                    <strong>Bank:</strong> Tamilnad Mercantile Bank
+                                </li>
+                                <li>
+                                    <strong>Branch:</strong> Meenampatti
+                                </li>
+                                <li>
+                                    <strong>IFSC Code:</strong> TMBL0000521
+                                </li>
+                            </ul>
+                        </div> */}
 
                         {/* Instructions */}
                         <div className="bg-white shadow rounded-lg p-6 mt-6">

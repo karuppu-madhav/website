@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { createRoot } from 'react-dom/client'
 import './index.css'
-import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import { Navigate, RouterProvider, createBrowserRouter } from 'react-router-dom';
 const SuperAdminLogin = React.lazy(() => import('./pages/SuperAdminLogin'));
 const AdminMain = React.lazy(() => import('./pages/admin/AdminMain'));
 const QuickPurchase = React.lazy(() => import('./pages/QuickPurchase'));
@@ -20,7 +20,11 @@ const PaymentInfo = React.lazy(() => import('./pages/PaymentInfo'));
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <HomePage />,
+    element: <Navigate to={'/quick-purchase'} replace />  ,
+  },
+  {
+    path:'/home',
+    element:<HomePage/>
   },
   {
     path: '/admin',
