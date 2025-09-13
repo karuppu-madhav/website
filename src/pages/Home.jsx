@@ -144,6 +144,9 @@ export default function HomePage() {
                             With years of experience and BIS-certified products, we ensure safe
                             celebrations with vibrant collections at wholesale prices.
                         </p>
+                        <button className='mt-4 h-fit text-white font-semibold rounded-md bg-red-500 py-2 px-3 text-sm cursor-pointer ' onClick={()=>{
+                            navigate('/quick-purchase')
+                        }} >Order Now</button>
                     </div>
                 </section>
 

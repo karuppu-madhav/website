@@ -47,9 +47,14 @@ export default function Header() {
                             <FaWhatsapp className='text-xl' />
                         </a>
                     </div>
-                    <a href={PriceList} className="!text-yellow-300" target='_blank' download>
-                        <span className='h-fit text-blue-700 font-semibold rounded-md bg-yellow-300 py-2 px-3 text-sm' >Download Price List</span>
-                    </a>
+                    <div className='flex items-center gap-3' >
+                        <a href={PriceList} className="!text-yellow-300" target='_blank' download>
+                            <span className='h-fit text-blue-700 font-semibold rounded-md bg-yellow-300 py-2 px-3 text-sm' >Download Price List</span>
+                        </a>
+                        <button className='h-fit text-white font-semibold rounded-md bg-green-500 py-2 px-3 text-sm cursor-pointer ' onClick={()=>{
+                            navigate('/quick-purchase')
+                        }} >Order Now</button>
+                    </div>
                 </nav>
             )}
             <nav className='h-full items-center px-8 py-4 flex justify-between' >

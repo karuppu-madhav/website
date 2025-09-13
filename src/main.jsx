@@ -20,7 +20,7 @@ const PaymentInfo = React.lazy(() => import('./pages/PaymentInfo'));
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <Navigate to={'/quick-purchase'} replace />  ,
+    element: <Navigate to={'/home'} replace />  ,
   },
   {
     path:'/home',

@@ -1,5 +1,5 @@
 import { auth, db } from '../../db';
-import { collection, addDoc, query, where, getDocs, doc, deleteDoc, updateDoc,or } from 'firebase/firestore';
+import { collection, addDoc, query, where, getDocs, doc, deleteDoc, updateDoc,or, and } from 'firebase/firestore';
 import { useUserStore } from '../store/userStore/index'
 import { App } from 'antd';
 import { useNavigate } from 'react-router';
@@ -63,7 +63,7 @@ export const useUserActions = () => {
             ordersRef,
             or(
                 where("customerData.phone", "==", phone),
-                where("orderID", "==", orderId)
+                where("orderID", "==", orderId),
             )
         );
 

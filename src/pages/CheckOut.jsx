@@ -79,7 +79,8 @@ export default function CheckOut() {
             orderID: id,
             orderedAt: Date.now(),
             orderStatus: "Waiting for Payment",
-            paymentStatus: "Not Paid"
+            paymentStatus: "Not Paid",
+            status:1
         }
         const result = await addProduct(data);
         console.log(result)
