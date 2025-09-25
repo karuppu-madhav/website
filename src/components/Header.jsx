@@ -31,7 +31,7 @@ export default function Header() {
 
     return (
         <header className='w-full sticky top-0 h-[18%] bg-white z-5 border-b border-gray-300' >
-            {location.pathname !== "/quick-purchase" && (
+            {(location.pathname !== "/quick-purchase"&&location.pathname !== "/cart"&&location.pathname !== "/checkout") && (
                 <nav className="bg-blue-800 py-4 min-h-fit px-4 md:px-8 gap-5 flex flex-col lg:flex-row lg:justify-between items-center">
                     <div className='flex items-center gap-3' >
                         <div className='flex items-center gap-2' >
